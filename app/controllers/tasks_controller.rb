@@ -5,6 +5,7 @@ class TasksController < ApplicationController
   end
 
   def create
+    byebug
     @task = Task.new(task_params)
     @task.save
     redirect_to task_path(@task)
